@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+ <!-- Mysql Configuration -->
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/skillexp2</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <!-- Dialect -->
+        
+  <!-- Hibernate Configuration -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+   <!-- pojo Configuration/ mapping -->
+  
+    <mapping class="com.klu.skill2.entity.Product"/>
+</session-factory>
+</hibernate-configuration>

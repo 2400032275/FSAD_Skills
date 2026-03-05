@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- Bean Definition -->
+ <bean id="student" class="com.klef.skill4.Student">
+<!-- id =student=>object name and without xml we need to create object manually ,with xml automatically objects are created-->
+        <!-- CONSTRUCTOR INJECTION  -->
+<constructor-arg value="32687"/>
+<constructor-arg value="Keerthi"/>
+<constructor-arg value="Java"/>
+<constructor-arg value="2"/>
+        <!-- SETTER INJECTION-->
+<property name="course" value="Spring Boot"/>
+<property name="year" value="3"/>
+</bean>   
+</beans>
